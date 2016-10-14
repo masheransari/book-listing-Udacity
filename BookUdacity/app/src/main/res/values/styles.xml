@@ -8,4 +8,8 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="RatingBar" parent="Base.Widget.AppCompat.RatingBar.Small">
+    <item name="colorControlNormal">@color/duskYellow</item>
+    <item name="colorControlActivated">@color/textColorTertiaryText</item>
+    <item name="android:isIndicator">true</item>
 </resources>
