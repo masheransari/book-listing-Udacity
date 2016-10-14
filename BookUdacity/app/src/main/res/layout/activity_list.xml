@@ -67,7 +67,7 @@
                 android:scrollHorizontally="false"
                 android:textSize="12sp"
                 tools:text="Juvenile Thriller"
-                android:textColor="@color/textColorTeritiaeryText"
+                android:textColor="@color/textColorTertiaryText"
                 />
         </LinearLayout>
     </LinearLayout>

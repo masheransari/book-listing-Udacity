@@ -13,14 +13,15 @@
         android:orientation="horizontal">
         <EditText
             android:layout_width="0dp"
-            android:layout_weight="20"
+            android:layout_weight="10"
             android:layout_gravity="center"
             android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
             android:hint="Search Book"
             android:id="@+id/editText"/>
         <Button
             android:layout_width="0dp"
-            android:layout_weight="1"
+            android:layout_weight="4"
             android:id="@+id/bookSearchBtn"
             android:text="Search"
             android:layout_height="wrap_content"></Button>

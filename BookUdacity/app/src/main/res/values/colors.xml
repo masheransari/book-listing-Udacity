@@ -6,7 +6,7 @@
 
     <color name="textColorMainText">#445b70</color>
     <color name="textColorSecondaryText">#959ea6</color>
-    <color name="textColorTeritiaeryText">#d4d8db</color>
-    <color name="dustYellow">#CDAD00</color>
+    <color name="textColorTertiaryText">#d4d8db</color>
+    <color name="duskYellow">#CDAD00</color>
     <color name="lightGray">#B4BAC0</color>
 </resources>
