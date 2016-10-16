@@ -10,19 +10,25 @@ public class Book {
     private String mPublisher;
     private String mCategory;
     private String mPicture;
+    private String ProvidedUrl;
 
-    public Book(double mRating, String mTitle, String mAuthor, String mPublisher, String mCategory, String mPicture) {
+    public Book(double mRating, String mTitle, String mAuthor, String mPublisher, String mCategory, String mPicture, String url) {
         this.mRating = mRating;
         this.mTitle = mTitle;
         this.mAuthor = mAuthor;
         this.mPublisher = mPublisher;
         this.mCategory = mCategory;
         this.mPicture = mPicture;
+        this.ProvidedUrl = url;
     }
 
     public double getmRating() {
 
         return mRating;
+    }
+
+    public String getPrividedUrl() {
+        return ProvidedUrl;
     }
 
     public String getmTitle() {
