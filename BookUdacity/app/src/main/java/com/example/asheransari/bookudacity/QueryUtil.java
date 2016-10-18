@@ -15,83 +15,7 @@ public final class QueryUtil {
 
     private static final String LOG_TAG = QueryUtil.class.getName();
 
-    private static final String BOOK_JSON_RESPONSE="{\n" +
-            " \"kind\": \"books#volume\",\n" +
-            " \"id\": \"beSP5CCpiGUC\",\n" +
-            " \"etag\": \"ebLTzEJtrUQ\",\n" +
-            " \"selfLink\": \"https://www.googleapis.com/books/v1/volumes/beSP5CCpiGUC\",\n" +
-            " \"volumeInfo\": {\n" +
-            "  \"title\": \"The 1989 World Book year book\",\n" +
-            "  \"subtitle\": \"a review of the events of 1988 ; the annual supplement to the World book encyclopedia\",\n" +
-            "  \"authors\": [\n" +
-            "   \"Robert O. Zeleny\"\n" +
-            "  ],\n" +
-            "  \"publisher\": \"World Book\",\n" +
-            "  \"publishedDate\": \"1989-02-01\",\n" +
-            "  \"industryIdentifiers\": [\n" +
-            "   {\n" +
-            "    \"type\": \"ISBN_10\",\n" +
-            "    \"identifier\": \"0716604892\"\n" +
-            "   },\n" +
-            "   {\n" +
-            "    \"type\": \"ISBN_13\",\n" +
-            "    \"identifier\": \"9780716604891\"\n" +
-            "   }\n" +
-            "  ],\n" +
-            "  \"readingModes\": {\n" +
-            "   \"text\": false,\n" +
-            "   \"image\": false\n" +
-            "  },\n" +
-            "  \"pageCount\": 576,\n" +
-            "  \"printedPageCount\": 584,\n" +
-            "  \"dimensions\": {\n" +
-            "   \"height\": \"26.00 cm\"\n" +
-            "  },\n" +
-            "  \"printType\": \"BOOK\",\n" +
-            "  \"categories\": [\n" +
-            "   \"Encyclopedias and dictionaries\",\n" +
-            "   \"History\",\n" +
-            "   \"Yearbooks\",\n" +
-            "   \"Reference / Yearbooks & Annuals\"\n" +
-            "  ],\n" +
-            "  \"maturityRating\": \"NOT_MATURE\",\n" +
-            "  \"allowAnonLogging\": false,\n" +
-            "  \"contentVersion\": \"preview-1.0.0\",\n" +
-            "  \"imageLinks\": {\n" +
-            "   \"smallThumbnail\": \"http://books.google.com/books/content?id=beSP5CCpiGUC&printsec=frontcover&img=1&zoom=5&imgtk=AFLRE71jxC-Jc5Db-G2X_PtX4jrruIlLLzXUX8ylBGgIqXBlL1Oyn8QW1iIASBW-NGsHnmJW6z_KSAP03s_zRd8kIg5iCZBI7uyUsja-AXn6KhXNZBWM7a4&source=gbs_api\",\n" +
-            "   \"thumbnail\": \"http://books.google.com/books/content?id=beSP5CCpiGUC&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE71UUMYy_DTfHZfiUpVlTv00QSr9MOwTrJNs7A3Dzl1ps-0f7u1ZK3bo1gxIYRXsDzxclaCbTJcIenporDyKe1BIX6QQbL7lTLDv7-hiAASwly48R6g&source=gbs_api\",\n" +
-            "   \"small\": \"http://books.google.com/books/content?id=beSP5CCpiGUC&printsec=frontcover&img=1&zoom=2&imgtk=AFLRE73CAISbaGO-e28-zzP3YYfVUFb1xkbNsEDEY_r79HRgrT2i5tdvCEaf4Q1mU12uIZ8oAmVRvUj9uOMyLjgPdAjYVvpw3Xyk9dtr2L29hgjR34mVjto&source=gbs_api\",\n" +
-            "   \"medium\": \"http://books.google.com/books/content?id=beSP5CCpiGUC&printsec=frontcover&img=1&zoom=3&imgtk=AFLRE7068agrSvrrcWNLo8uaSgOxgrUQqqql0qUK55RtGCqJHhusu5Ege1WNyURPYDSIgw9qSr_5kTyhQbkbVlhg9BGhhNdppoSwrS8UxElpc3LIHmItKCU&source=gbs_api\",\n" +
-            "   \"large\": \"http://books.google.com/books/content?id=beSP5CCpiGUC&printsec=frontcover&img=1&zoom=4&imgtk=AFLRE71kTqO_hhzLOxwM6JEH3lwrWA1zeha25WhtdAnDV2yQekaXKHdqAsnLn5iCI-xZMcu3VExlGfcyyE-RaaTNiXZhBMBBOOausYsdRz4Z8aR_-pb21Qw&source=gbs_api\",\n" +
-            "   \"extraLarge\": \"http://books.google.com/books/content?id=beSP5CCpiGUC&printsec=frontcover&img=1&zoom=6&imgtk=AFLRE708oMsYiZhXJeq0USQiAIcrpnlU1vVLaAjrmiOgDm8yTVnhZODTz5XBYRrcaeiKRf72a_bd7XSsCRzvLDK2orOuTfkwbnyQTf2-BMylEFmLB9CzKyw&source=gbs_api\"\n" +
-            "  },\n" +
-            "  \"language\": \"en\",\n" +
-            "  \"previewLink\": \"http://books.google.com/books?id=beSP5CCpiGUC&hl=&source=gbs_api\",\n" +
-            "  \"infoLink\": \"https://play.google.com/store/books/details?id=beSP5CCpiGUC&source=gbs_api\",\n" +
-            "  \"canonicalVolumeLink\": \"https://market.android.com/details?id=book-beSP5CCpiGUC\"\n" +
-            " },\n" +
-            " \"saleInfo\": {\n" +
-            "  \"country\": \"PK\",\n" +
-            "  \"saleability\": \"NOT_FOR_SALE\",\n" +
-            "  \"isEbook\": false\n" +
-            " },\n" +
-            " \"accessInfo\": {\n" +
-            "  \"country\": \"PK\",\n" +
-            "  \"viewability\": \"NO_PAGES\",\n" +
-            "  \"embeddable\": false,\n" +
-            "  \"publicDomain\": false,\n" +
-            "  \"textToSpeechPermission\": \"ALLOWED\",\n" +
-            "  \"epub\": {\n" +
-            "   \"isAvailable\": false\n" +
-            "  },\n" +
-            "  \"pdf\": {\n" +
-            "   \"isAvailable\": false\n" +
-            "  },\n" +
-            "  \"webReaderLink\": \"http://books.google.com/books/reader?id=beSP5CCpiGUC&hl=&printsec=frontcover&output=reader&source=gbs_api\",\n" +
-            "  \"accessViewStatus\": \"NONE\",\n" +
-            "  \"quoteSharingAllowed\": false\n" +
-            " }\n" +
-            "}";
+    private static final String BOOK_JSON_RESPONSE="https://www.googleapis.com/books/v1/volumes?q=data+structure";
 //            "{{\n" +
 //            " \"kind\": \"books#volumes\",\n" +
 //            " \"totalItems\": 1279,\n" +
@@ -815,61 +739,71 @@ public final class QueryUtil {
 
 
 
-    public QueryUtil(){
+    private QueryUtil(){
 
     }
 
     public static ArrayList<Book> extractBookDetail()
-    {
+    {        Log.e("QueryUtilr", "In extractBookDetail()");
         ArrayList<Book> books = new ArrayList<>();
         try {
-            JSONObject baseJsonResponse = new JSONObject(BOOK_JSON_RESPONSE);
-            JSONArray bookArray = baseJsonResponse.getJSONArray("items");
+            Log.e("BookAdapter", "In Try box");
+            JSONObject baseJsonObject = new JSONObject(BOOK_JSON_RESPONSE);
+            JSONArray bookArray = baseJsonObject.getJSONArray("items");
             int length = bookArray.length();
-            for (int i = 0; i < length; i++) {
+
+            for (int i=0; i<length; i++)
+            {
                 String author = "Author: ";
-                String category = "";
-                String publisher = "Publisher: ";
+                String category="";
+                String publisher="Publisher: ";
                 double rating;
+                String urlJsonLink="";
 
                 JSONObject bookObject = bookArray.getJSONObject(i);
                 JSONObject bookInfo = bookObject.getJSONObject("volumeInfo");
+
                 String title = bookInfo.getString("title");
                 publisher += bookInfo.getString("publisher");
-                if (bookInfo.isNull("averageRating")) {
-                    // Default unrated value? Hmm...
+                if (bookInfo.isNull("averageRating"))
+                {
                     rating = 5;
-                } else {
+                }
+                else
+                {
                     rating = bookInfo.getDouble("averageRating");
                 }
+                urlJsonLink = bookInfo.getString("previewLink");
 
-                JSONArray authors = bookInfo.getJSONArray("authors");
+                JSONArray authorJson = bookInfo.getJSONArray("authors");
 
-                /**
-                 * Loop functions for the author(s) array
-                 */
-                if (authors.length() > 0) {
-                    for (int j = 0; j < authors.length(); j++) {
-                        author += authors.optString(j) + " ";
+                if (authorJson.length()>0)
+                {
+                    for (int j=0;j<authorJson.length(); j++ )
+                    {
+                        author += authorJson.optString(j)+ " ";
                     }
                 }
 
                 JSONArray categories = bookInfo.getJSONArray("categories");
-
-                if (categories.length() > 0) {
-                    for (int j = 0; j < categories.length(); j++) {
-                        category += categories.optString(j) + " ";
+                if (categories.length()>0)
+                {
+                    for (int j=0; j<categories.length();j++)
+                    {
+                        category += categories.optString(j)+" ";
                     }
                 }
+//                    error sirf yehe pe hai... es line ko comment krna hai then Error resolve..
+//abhi hume yeha pe ek yeh kam karna hai ke hume link yeha pe save krna hai urlJsonLink me save krna hai....
 
                 Log.v(LOG_TAG, title + " " + author + " " + publisher + " " + rating + " " +
                         category + " ");
-                Book book = new Book(rating, title, author, publisher, category);
-                books.add(book);
-
+                books.add(new Book(rating, title, author, publisher, category, urlJsonLink));
+                Log.e("BookAdapter", "in Try Box end");
             }
 
         } catch (JSONException e) {
+            Log.e("BookAdapter", "In catch Box");
             e.printStackTrace();
         }
         return books;

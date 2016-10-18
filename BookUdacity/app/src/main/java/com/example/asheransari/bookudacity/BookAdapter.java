@@ -1,6 +1,7 @@
 package com.example.asheransari.bookudacity;
 
 import android.app.Activity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,6 +25,7 @@ public class BookAdapter extends ArrayAdapter<Book> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent)
     {
+        Log.e("BookAdapter", "In GetView()");
         View listItemView = convertView;
         if (listItemView == null)
         {
@@ -47,8 +49,11 @@ public class BookAdapter extends ArrayAdapter<Book> {
         RatingBar bookRating = (RatingBar) listItemView.findViewById(R.id.book_rating);
         bookRating.setRating((float) currentBook.getmRating());
 
+        TextView link = (TextView)listItemView.findViewById(R.id.link);
+        link.setText(currentBook.getMurl());
 
         //Return the list item view that is now showing the appropriate date
+        Log.e("BookAdapter", "In GetView()");
         return listItemView;
 
     }

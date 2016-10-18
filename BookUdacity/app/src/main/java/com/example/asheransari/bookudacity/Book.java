@@ -9,13 +9,19 @@ public class Book {
     private String mAuthor;
     private String mPublisher;
     private String mCategory;
+    private String murl;
 
-    public Book(double mRating, String mTitle, String mAuthor, String mPublisher, String mCategory) {
+    public Book(double mRating, String mTitle, String mAuthor, String mPublisher, String mCategory, String url) {
         this.mRating = mRating;
         this.mTItle= mTitle;
         this.mAuthor = mAuthor;
         this.mPublisher = mPublisher;
         this.mCategory = mCategory;
+        this.murl = url;
+    }
+
+    public String getMurl() {
+        return murl;
     }
 
     public double getmRating() {
